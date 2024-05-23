@@ -1,0 +1,53 @@
+.carousel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slides-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    /* Adjust width as needed */
+}
+
+.slide {
+    flex: 0 0 auto;
+    width: calc(33.33% - 20px);
+    /* Adjust width and margin as needed */
+    margin-right: 20px;
+    /* Adjust margin as needed */
+    text-align: center;
+    transition: transform 0.5s ease;
+    position: relative;
+}
+
+.slide.active {
+    transform: scale(1.1);
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.offers {
+    width: 40%;
+    /* Adjust width as needed */
+}
+
+.offers h2 {
+    margin-top: 0;
+}
+
+.offers ul {
+    padding-left: 20px;
+}
+
+.offers li {
+    margin-bottom: 10px;
+}
