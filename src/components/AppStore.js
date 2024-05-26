@@ -12,7 +12,7 @@ const AppStore = () => {
                         <div
                             data-aos="fade-up"
                             data-aos-duration="300"
-                            className="space-y-6 max-w-xl mx-auto"
+                            className="space-y-6 max-w-xl mx-auto sm:mx-0"
                         >
                             <h1 className="text-2xl text-center sm:text-left sm:text-4xl font-semibold text-gray-700 dark:text-gray-400">
                                 Pizza Corner is available for Android and IOS
@@ -23,6 +23,7 @@ const AppStore = () => {
                                         src={PlayStoreImg}
                                         alt="Play store"
                                         className="max-w-[150px] sm:max-w-[120px] md:max-w-[200px]"
+                                        style={{ width: '100%', maxWidth: '150px' }}
                                     />
                                 </a>
                                 <a href="#">
@@ -30,6 +31,7 @@ const AppStore = () => {
                                         src={AppStoreImg}
                                         alt="App store"
                                         className="max-w-[150px] sm:max-w-[120px] md:max-w-[200px]"
+                                        style={{ width: '100%', maxWidth: '150px' }}
                                     />
                                 </a>
                             </div>

@@ -51,3 +51,31 @@
 .offers li {
     margin-bottom: 10px;
 }
+
+/* Media Queries for Responsive Design */
+
+@media screen and (max-width: 768px) {
+    .carousel {
+        flex-direction: column;
+    }
+
+    .slides-container {
+        width: 100%;
+    }
+
+    .slide {
+        width: calc(50% - 20px);
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .offers {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .slide {
+        width: 100%;
+    }
+}
