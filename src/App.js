@@ -1,4 +1,3 @@
-
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Testimonial from "./components/Testimonial";
@@ -23,7 +22,6 @@ function App() {
       <PizzaCard />
       <Testimonial />
       <AppStore />
-
       <Footer />
     </div>
   );

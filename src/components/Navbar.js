@@ -10,23 +10,26 @@ function Navbar() {
     const toggleNavbar = () => {
         setOpenLinks(!openLinks);
     };
+
     return (
         <div className="navbar">
             <div className="leftSide" id={openLinks ? "open" : "close"}>
-                <img src={Logo} />
+                <Link to="/" className="logo-link">
+                    <img src={Logo} alt="Pizza Logo" />
+                </Link>
                 <div className="hiddenLinks">
-                    <Link to="/"> Home </Link>
-                    <Link to="/menu"> Menu </Link>
-                    <Link to="/about"> About </Link>
-                    <Link to="/contact"> Contact </Link>
+                    <Link to="/">Home</Link>
+                    <Link to="/menu">Menu</Link>
+                    <Link to="/about">About</Link>
+                    <Link to="/contact">Contact</Link>
                 </div>
             </div>
             <div className="rightSide">
-                <Link to="/"> Home </Link>
-                <Link to="/menu"> Menu </Link>
-                <Link to="/about"> About </Link>
-                <Link to="/contact"> Contact </Link>
-                <button onClick={toggleNavbar}>
+                <Link to="/">Home</Link>
+                <Link to="/menu">Menu</Link>
+                <Link to="/about">About</Link>
+                <Link to="/contact">Contact</Link>
+                <button onClick={toggleNavbar} className={openLinks ? "open-btn" : "close-btn"}>
                     <ReorderIcon />
                 </button>
             </div>

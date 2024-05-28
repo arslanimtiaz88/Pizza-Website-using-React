@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 import '../styles/PizzaCard.css';
 import Pineapple from "../assets/pineapple.jpg";
 import BBQ from "../assets/pepperoni.jpg";
-import Vegietable from "../assets/vegan.jpg";
+import Vegetable from "../assets/vegan.jpg";
 
 const pizzas = [
     { name: "Pineapple", image: Pineapple },
     { name: "BBQ", image: BBQ },
-    { name: "Vegietable", image: Vegietable }
+    { name: "Vegetable", image: Vegetable }
 ];
 
 const offers = [
