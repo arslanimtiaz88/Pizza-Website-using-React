@@ -15,7 +15,7 @@
 }
 
 .navbar .leftSide img {
-    width: 70px;
+    width: 50px;
 }
 
 .navbar .rightSide {
@@ -65,7 +65,7 @@
 }
 
 .navbar #open a {
-    width: 70px;
+    width: 50px;
     margin: 5px;
 }
 
@@ -94,12 +94,9 @@
     }
 }
 
-@media only screen and (min-width: 600px) {
-    .navbar .rightSide button {
-        display: none;
-    }
 
-    .hiddenLinks {
-        display: none;
-    }
+
+
+.hiddenLinks {
+    display: none;
 }
