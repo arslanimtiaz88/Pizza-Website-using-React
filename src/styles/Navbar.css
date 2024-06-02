@@ -7,15 +7,20 @@
 }
 
 .navbar .leftSide {
-    flex: 50%;
+    flex: 40%;
     height: 100%;
     display: flex;
     align-items: center;
-    padding-left: 150px;
+    padding-left: 100px;
 }
 
 .navbar .leftSide img {
-    width: 50px;
+    width: 40px;
+    padding-right: 10px;
+    display: flex;
+    align-items: right;
+    width: 60%;
+    height: 60px;
 }
 
 .navbar .rightSide {
@@ -29,7 +34,7 @@
 .navbar a {
     color: white;
     text-decoration: none;
-    margin: 20px;
+    margin: 10px;
 }
 
 .navbar .rightSide button {
@@ -37,45 +42,25 @@
     border: none;
     color: white;
     cursor: pointer;
+    display: none;
+    /* Initially hidden */
 }
 
 .navbar .rightSide svg {
     font-size: 40px;
 }
 
-.navbar #open {
-    padding-left: 0px;
-}
-
-.navbar #open img {
+.hiddenLinks {
     display: none;
-}
-
-.navbar #close img {
-    display: inherit;
-}
-
-.navbar #open .hiddenLinks {
-    display: inherit;
-    margin-left: 30px;
-}
-
-.navbar #close .hiddenLinks {
-    display: none;
-}
-
-.navbar #open a {
-    width: 50px;
-    margin: 5px;
 }
 
 @media only screen and (max-width: 900px) {
-    .navbar .rightSide a {
-        width: 70px;
-    }
-
     .navbar .leftSide {
         padding-left: 50px;
+    }
+
+    .navbar .rightSide a {
+        width: 70px;
     }
 }
 
@@ -91,12 +76,27 @@
 
     .navbar .rightSide button {
         display: inherit;
+        /* Show button on mobile */
     }
-}
 
+    .navbar .hiddenLinks {
+        display: none;
+        flex-direction: row;
+        /* Change to row for horizontal display */
+        align-items: center;
+        justify-content: center;
+        position: center;
+        top: 65px;
+        /* Adjust according to navbar height */
+        width: 50%;
+        background-color: #121619;
+    }
 
+    .navbar #open .hiddenLinks {
+        display: flex;
+    }
 
-
-.hiddenLinks {
-    display: none;
+    .navbar #close .hiddenLinks {
+        display: none;
+    }
 }
